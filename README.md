@@ -1,8 +1,12 @@
 # Sephora Catalog Analysis (2023)
 Exploratory Data Analysis on Pricing, Brand Exclusivity, Sales Channels, and Inventory Health
 
+![Dashboard](dashboard.png)
+
 ## Summary
 Exploratory Data Analysis (EDA) and interactive Excel dashboard built from Sephora's 2023 online product dataset (over 8,000 raw records; **6,479 products** analyzed after data cleaning and outlier filtering). The project examines inventory availability, pricing tiers, discounting behavior, brand exclusivity, and customer engagement (`loves_count` and `rating`).
+
+![Dataset](dataset.png)
 
 ## Business Problem
 Evaluate catalog health, pricing strategy, and stockout risk across product categories, sales channels, and brand tiers while preventing small-sample distortion in percentage metrics:
@@ -14,6 +18,10 @@ Evaluate catalog health, pricing strategy, and stockout risk across product cate
 ## Methodology & Skills
 - **Power Query (ETL & Feature Engineering):** Data type cleaning, conditional price-range bucketing (`Budget/Value`, `Mid-Range`, `Premium`, `Luxury`), creation of a custom **`Out-of-Stock Rate (%)`** column to standardize inventory availability metrics, and minimum SKU volume filtering to eliminate denominator bias.
 - **Power Pivot & Excel Modeling:** Relational data modeling, dynamic Pivot Tables, dual-axis combo charts, synchronized slicers, and **`GETPIVOTDATA`** formulas to dynamically link and update executive KPI cards across filter states.
+
+![Power_Query](query.png)
+
+![Power_Pivot](data_model.png)
 
 ## Key Results & Recommendations
 - **Stockout risk in high-demand brands:** Overall out-of-stock rate is **39.02%**, with high-popularity brands like *Mugler*, *Carolina Herrera*, *Marc Jacobs Fragrances*, and *Dolce&Gabbana* showing notable stockout exposure.
